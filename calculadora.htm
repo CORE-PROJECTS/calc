@@ -24,6 +24,7 @@
 				}				
 			});
 
+<<<<<<< HEAD
 			$("#cubo").on("click", function(){
 				var num=$("#pantalla");
 				if(isNaN(num.val())){
@@ -32,6 +33,17 @@
 					num.val(num.val()*num.val()*num.val());
 				}				
 			});
+=======
+			$("#raiz").on("click", function(){
+				var num=$("#pantalla");
+				if(isNaN(num.val())||num.val()<0){
+					num.val("Error");
+				}else{
+				num.val(Math.sqrt(num.val()));
+				}		
+			});
+
+>>>>>>> master
 
 		});
 
@@ -48,7 +60,11 @@
 	 		<p> <input type="text" size="12" id="pantalla"> </p>
 	 		<p> 
 	 			<button id="cuadrado"> x <sup>2</sup> </button>
+<<<<<<< HEAD
 	 			<button id="cubo"> x <sup>3</sup> </button>
+=======
+	 			<button id="raiz"> sqrt(x) </button>
+>>>>>>> master
 	 		</p>
 	 	</article>
 
