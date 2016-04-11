@@ -24,6 +24,14 @@
 				}				
 			});
 
+			$("#cubo").on("click", function(){
+				var num=$("#pantalla");
+				if(isNaN(num.val())){
+					num.val("Error");
+				}else{
+					num.val(num.val()*num.val()*num.val());
+				}				
+			});
 
 		});
 
@@ -40,6 +48,7 @@
 	 		<p> <input type="text" size="12" id="pantalla"> </p>
 	 		<p> 
 	 			<button id="cuadrado"> x <sup>2</sup> </button>
+	 			<button id="cubo"> x <sup>3</sup> </button>
 	 		</p>
 	 	</article>
 
